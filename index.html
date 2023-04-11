@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 403-01-Key Press detect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="card">
+            <h2>Press Any To Get Started</h2>
+            
+        </div>
+    </div>
+    <script>
+        window.addEventListener('keydown',(e)=>{
+            document.getElementById('card').innerHTML=`<p class="one">You Pressed:</p>
+            <h2>Key:- ${e.key}</h2>
+            <p class="two">Key Code: ${e.keyCode}</p>`
+        })
+    </script>
+    
+</body>
+</html>
